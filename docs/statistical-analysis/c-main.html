@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+    <title>概况一览</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- 页面描述，搜索引擎解析用 -->
+    <meta name="description" content="">
+    <meta name="keywords" content="概况一览">
+
+    <!-- 设置图标 -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
+    <link rel="stylesheet" href="ui/amazeui/css/amazeui.min.css"/>
+    <link rel="stylesheet" href="css/project.css">
+    <script src="js/lib/require.js"></script>
+    <script src="js/require-config.js"></script>
+    <script src="js/biz/c-main.js"></script>
+
+</head>
+<body class="page-main">
+    <div class="content">
+        <div class="block user-summary">
+                <div class="block-head">
+                    用户总况
+                    <i class="am-icon-question-circle-o" data-am-popover="{content: '活跃用户：相关说明<br>活跃率：相关说明', trigger: 'hover focus'}"></i>
+                </div>
+                <div class="block-body">
+                    <div class="data-item">
+                        <div class="data-item-title">
+                            累计用户
+                        </div>
+                        <div class="data-item-value">11032</div>
+                    </div>
+                    <div class="data-item">
+                        <div class="data-item-title">累计启动次数</div>
+                        <div class="data-item-value">21230</div>
+                    </div>
+                    <div class="data-item">
+                        <div class="data-item-title">活跃用户</div>
+                        <div class="data-item-value">3329</div>
+                    </div>
+                    <div class="data-item">
+                        <div class="data-item-title">活跃率</div>
+                        <div class="data-item-value">11%</div>
+                    </div>
+                </div>
+            </div>
+
+        <div class="block">
+            <div class="block-head">
+                <a href="javascript:;" class="am-fr" data-link="c-user.html" data-name="用户详情">详情>></a>
+                用户概况
+                <i class="am-icon-question-circle-o" data-am-popover="{content: '点击下面累计用户、新增用户、启动次数切换显示', trigger: 'hover focus'}"></i>
+            </div>
+            <div class="block-body">
+                <div id="bar1" class="chart"></div>
+            </div>
+        </div>
+
+        <div class="block">
+            <div class="block-head">
+                <a href="javascript:;" class="am-fr" data-link="c-map.html" data-name="地域分布">详情>></a>
+                地域概况
+            </div>
+            <div class="block-body">
+                <div id="map1" class="chart"></div>
+            </div>
+        </div>
+
+        <div class="block">
+            <div class="block-head">
+                <a href="javascript:;" class="am-fr" data-link="c-error.html" data-name="错误分析">详情>></a>
+                报错概况
+            </div>
+            <div class="block-body">
+                <div id="errorTb" class="chart"></div>
+            </div>
+        </div>
+
+        <div class="block">
+            <div class="block-head">
+                <a href="javascript:;" class="am-fr"  data-link="c-device.html" data-name="设备型号">详情>></a>
+                设备概况
+            </div>
+            <div class="block-body">
+                <div id="deviceTb" class="chart"></div>
+            </div>
+        </div>
+
+        <div class="block">
+            <div class="block-head">
+                <a href="javascript:;" class="am-fr">详情>></a>
+                页面访问
+            </div>
+            <div class="block-body">
+                <div id="pageTb" class="chart"></div>
+            </div>
+        </div>
+
+        <div class="block">
+            <div class="block-head">
+                <a href="javascript:;" class="am-fr">详情>></a>
+                接口调用
+            </div>
+            <div class="block-body">
+                <div id="interfaceTb" class="chart"></div>
+            </div>
+        </div>
+
+        <div class="block">
+            <div class="block-head">
+                <a href="javascript:;" class="am-fr">详情>></a>
+                插件使用
+            </div>
+            <div class="block-body">
+                <div id="plugTb" class="chart"></div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

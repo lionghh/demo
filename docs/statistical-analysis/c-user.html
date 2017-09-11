@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+    <title>用户明细</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- 页面描述，搜索引擎解析用 -->
+    <meta name="description" content="">
+    <meta name="keywords" content="index">
+
+    <!-- 设置图标 -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
+    <link rel="stylesheet" href="ui/amazeui/css/amazeui.min.css"/>
+    <link rel="stylesheet" href="css/project.css">
+    <script src="js/lib/require.js"></script>
+    <script src="js/require-config.js"></script>
+    <script src="js/biz/c-user.js"></script>
+</head>
+<body class="page-users">
+    <div class="content">
+        <div class="block">
+            <div class="block-head">
+                <div class="time-block">
+                    <div class="sys-select"></div>
+                </div>
+                用户明细 <i class="am-icon-question-circle-o" data-am-popover="{content: '活跃用户：相关说明<br>活跃率：相关说明', trigger: 'hover focus'}"></i>
+            </div>
+            <div class="block-body">
+
+                <table class="am-table am-table-bordered am-table-striped am-table-compact">
+                    <thead>
+                    <tr>
+                        <th>日期</th>
+                        <th data-type="newUser">新增用户</th>
+                        <th data-type="">新增用户占比</th>
+                        <th data-type="startCount">启动次数</th>
+                        <th data-type="activeUser">活跃用户</th>
+                        <th data-type="">活跃率</th>
+                        <th data-type="useTime">每次使用时长</th>
+                        <th data-type="personTime">每人使用时长</th>
+                        <th data-type="updateUser">升级用户</th>
+                        <th data-type="updateCount">升级次数</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>今日</td>
+                        <td>191</td>
+                        <td>1.2%</td>
+                        <td>682</td>
+                        <td>512</td>
+                        <td>14%</td>
+                        <td>00:02:23</td>
+                        <td>00:13:46</td>
+                        <td>481</td>
+                        <td>841</td>
+                    </tr>
+                    <tr>
+                        <td>昨日</td>
+                        <td>231</td>
+                        <td>1.5%</td>
+                        <td>682</td>
+                        <td>512</td>
+                        <td>10%</td>
+                        <td>00:02:23</td>
+                        <td>00:13:46</td>
+                        <td>481</td>
+                        <td>841</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <div class="chart" id="userDetail"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="am-modal am-modal-alert" tabindex="-1" id="my-alert">
+        <div class="am-modal-dialog">
+            <div class="am-modal-hd">Amaze UI</div>
+            <div class="am-modal-bd">
+                Hello world！
+            </div>
+            <div class="am-modal-footer">
+                <span class="am-modal-btn">确定</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -8,10 +8,20 @@
 require.config({
     baseUrl:'js/lib',
     paths:{
-        'jquery':'jquery',
+        'jquery':'jquery', // 路径同名称的，可以不配置
         'echarts':'echarts',
-        'AMUI' : '../../ui/amazeui/js/amazeui'
-    },
+        'AMUI' : '../../ui/amazeui/js/amazeui',
+
+        'china':'map/china',
+        'beijing':'map/beijing', // 地图，可到http://echarts.baidu.com/download-map.html下载各省份地图
+
+        'tool':    '../biz/common/tool',
+        'category': '../biz/common/category', // 时间类目
+        'mock': '../biz/common/mock',          // 模拟数据
+        'modal': '../biz/common/modal',        // 消息组件
+        'time-slt':'../biz/common/time-slt'     // 选择时间组件
+
+    }
     //缓存
-    urlArgs: "timestamp="+new Date().getTime()
+    //,urlArgs: "timestamp="+new Date().getTime()
 });

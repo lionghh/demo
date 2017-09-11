@@ -1,15 +1,121 @@
 html{
     font-size: 10px !important;
 }
-html, body {
+html, body.page-frame {
     height: 100%;
     width: 100%;
     position: relative;
-    overflow: hidden;
+}
+body.page-frame{
+    min-width: 800px;
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #eceff1;
 }
+
+/*  多个页面复用部分    */
+/* 选择框 */
+.sys-select{
+    position: relative;
+    box-sizing: border-box;
+    min-width: 21rem;
+    display: inline-block;
+}
+.sys-select-result{
+    position: relative;
+    box-sizing: border-box;
+    padding: 0 1rem;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: #4A4E5A;
+    background-color: #fcfcfc;
+    border: 1px solid #e8e8e8;
+}
+.sys-select-result .am-icon-angle-down{
+    position: absolute;
+    right: 1rem;
+    top:.1rem;
+    font-size: 2rem;
+    color: #4A4E5A;;
+}
+.sys-options{
+    position: absolute;
+    z-index: 1;
+    display: none;
+    left:0;
+    right:0;
+    top:3rem;
+    border-radius:0 0 .4rem .4rem;
+    border: 1px solid #e8e8e8;
+    background-color: #fff;
+}
+.sys-select.open .sys-options{
+    display: block;
+}
+.sys-options .sys-option{
+    position: relative;
+    padding:0 1rem 0 4.5rem;
+    border-bottom:1px solid #e8e8e8;
+    font-size: 1.3rem;
+    line-height: 3rem;
+    color: #999;
+}
+.sys-option.slt{
+    color: #4A4E5A;
+}
+.sys-option.slt:after{
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 0.5rem;
+    top: 1rem;
+    right: 1.2rem;
+    border: 1px solid #4A4E5A;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.sys-option:hover{
+    background-color: #ddd;
+}
+.sys-date-label{
+    font-size: 13px;
+    float: left;
+    color: #666;
+    padding:0 5px;
+    width: 46px;
+    text-align: right;
+}
+.sys-date{
+    overflow: auto;
+    line-height: 22px;
+    font-size: 13px;
+    padding: 4px 0;
+}
+.sys-date input{
+    width: 100px;
+    border: 1px solid #ccc;
+    color: #666;
+    padding: 0 5px;
+    line-height: inherit;
+    font-size: inherit;
+}
+.sys-buttons .am-btn{
+    font-size: 13px;
+    line-height: 1.5;
+    padding: 0;
+    min-width: 65px;
+    margin: 5px 0 5px 35px;
+    color: #666;
+}
+.sys-diy-content{
+    display: none;
+    padding: 3px 0;
+}
+
+
 /* 登录页 */
 .page-login{
     background-color: #31525F;
@@ -143,9 +249,9 @@ button.register-button{
 .frame-middle{
     top:4rem;
     bottom: 3.2rem;
+    background-color: #31525F;
 }
 .middle-left{
-    background-color: #31525F;
     width: 21rem;
     overflow: auto;
 }
@@ -155,10 +261,10 @@ button.register-button{
 .right-bar{
     right: auto;
     width: .5rem;
-    background-color: #31525F;
+    background-color: #5994AB;
     cursor: vertical-text;
-    border-left: 1px solid #4E7F97;
-    border-right: 1px solid #4E7F97;
+    border-left: 1px solid #35404d;
+    border-right: 1px solid #35404d;
     overflow: visible;
 }
 .sys-name{
@@ -248,7 +354,6 @@ button.register-button{
 .side-menu .menu-item.on .menu-head,
 .side-menu .menu-item.expand .menu-head{
     color: #fff;
-    background-image: linear-gradient(#31525F, #333);
 }
 .copyright{
     text-align: center;
@@ -258,7 +363,6 @@ button.register-button{
 }
 .right-head{
     left: .5rem;
-    background-color: #31525F;
     border-bottom: .3rem solid #8BCBE4;
     height: 3.1rem;
 }
@@ -313,7 +417,6 @@ button.register-button{
 .navs-head ul>li:first-child .am-close{
     display: none;
 }
-
 .navs-head.tableDisplay ul{
     display: table;
     width: 100%;
@@ -352,7 +455,7 @@ button.register-button{
     margin-top: -12px;
     font-size: 14px;
     line-height: 24px;
-    color: #31525F;
+    color: #35404d;
     text-align: center;
 }
 .siderbar-switch .am-icon-caret-right{
@@ -397,4 +500,328 @@ button.register-button{
 .show-middle-only .frame-middle{
     top:0;
     bottom: 0;
+}
+
+/* reset am ui */
+.am-table>thead>tr>th,
+.am-table>tbody>tr>td{
+    text-align: center;
+}
+.am-table>thead>tr>th{
+    font-size: 14px;
+    background-color: #eee;
+    font-weight: bold;
+}
+.am-table>tbody>tr>td:not(.am-text-primary){
+    font-size: 14px;
+}
+.am-table>tbody>tr>td{
+    font-size: 14px;
+}
+.am-pagination{
+    margin: 0;
+}
+.am-pagination>li>a, .am-pagination>li>span{
+    padding: 0;
+    min-width: 22px;
+    line-height: 22px;
+    text-align: center;
+    border: none;
+}
+
+/* public */
+.goto-input{
+    width: 22px;
+    border: none;
+    color: #666;
+    padding: 0 1px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+}
+.am-btn{
+    font-size: 13px;
+    line-height: 20px;
+    padding: 0;
+    min-width: 60px;
+    color: #0e90d2;
+    background-color: #fff;
+}
+.am-btn:hover{
+    color: #fff;
+    background-color: #0e90d2;
+}
+.time-block{
+    position: absolute;
+    right:10px;
+    top:1px;
+}
+
+/* page-main */
+.content{
+    overflow: hidden;
+    padding: 1rem;
+}
+.page-main .content{
+    padding: .5rem;
+}
+.page-main .content>div{
+    width: 50%;
+    float: left;
+    padding: .5rem .5rem ;
+}
+.page-main .content>div.user-summary{
+    width: 100%;
+}
+.chart{
+    height: 300px;
+    background-color: #fff !important;
+}
+.block+.block{
+    margin-top: 1rem;
+}
+.page-main .block+.block{
+    margin-top: 0;
+}
+.block-head,
+.block-foot{
+    position: relative;
+    height: 32px;
+    padding: 0 1rem;
+    color: #fff;
+    font-size: 14px;
+    line-height: 32px;
+    background-image: linear-gradient(#5994AB, #333);
+    border-radius: 3px 3px 0 0;
+}
+.block-foot{
+    border-radius: 0 0 3px 3px;
+}
+.block-body{
+    border: 1px solid #5994AB;
+    overflow: hidden;
+    background-color: #fff;
+}
+.data-item{
+    width: 25%;
+    float: left;
+}
+.data-item-title,
+.data-item-value{
+    text-align: center;
+    padding: 1.5rem;
+    line-height: 1.2;
+}
+.data-item-title{
+    font-size: 15px;
+    color: #666;
+}
+.data-item-value{
+    color: #333;
+    font-size: 32px;
+    padding-top: 0;
+}
+.block-head a{
+    color: #fff;
+}
+.block-head a:hover{
+    color: #ddd;
+}
+/* 用户详情 */
+.page-users .am-table{
+    cursor: pointer;
+}
+.page-version .chart{
+    float: left;
+    width: 33.33%;
+}
+
+/* 附加皮肤 blue */
+.theme-switch a[data-theme='theme-blue'] span{
+    background-color: #0065a0;
+}
+
+.theme-blue .frame-top,
+.theme-blue .frame-bottom,
+.theme-blue .right-bar{
+    background-color: #0065a0;
+}
+.theme-blue .frame-middle{
+    background-color: #014268;
+}
+.theme-blue .side-menu .menu-head,
+.theme-blue  li a{
+    color: #bbb;
+}
+.theme-blue .right-bar,
+.theme-blue .frame-top,
+.theme-blue .frame-bottom{
+    border-color: #eceff1;
+}
+.theme-blue .siderbar-switch{
+    background-color: #eceff1;
+}
+.theme-blue .side-menu .menu-head,
+.theme-blue .block-head,
+.theme-blue .block-foot{
+    background-image: linear-gradient(#333, #014268);
+}
+.theme-blue .navs-head .on .navs-title{
+    background-color: #eceff1;
+    color: #0065a0;
+}
+.theme-blue .right-head{
+    border-color: #eceff1;
+}
+.theme-blue .block-body{
+    border-color: #014268;
+}
+.theme-blue .page-login{
+    background-image: linear-gradient(#333, #0065a0);
+}
+.theme-blue .login-container{
+    background-color: #0065a0;
+}
+.theme-blue .system-logo{
+    border-color: #333;
+}
+.theme-blue .row-buttons button{
+    background-image: linear-gradient(#014268, #333);
+}
+.theme-blue .row-buttons button:hover{
+    background-image: linear-gradient(#014268, #000);
+}
+.theme-blue .find-pass{
+    color: #ddd;
+}
+.theme-blue .find-pass:hover{
+    color: #fff;
+}
+
+/* 附加皮肤 yel */
+.theme-switch a[data-theme='theme-yel'] span{
+    background-color: #ff7b00;
+}
+
+.theme-yel .frame-top,
+.theme-yel .frame-bottom,
+.theme-yel .right-bar{
+    background-color: #ff7b00;
+}
+.theme-yel .frame-middle{
+    background-color: #9a5104;
+}
+.theme-yel .side-menu .menu-head,
+.theme-yel  li a{
+    color: #ddd;
+}
+.theme-yel .right-bar,
+.theme-yel .frame-top,
+.theme-yel .frame-bottom{
+    border-color: #ffede0;
+}
+.theme-yel .siderbar-switch{
+    background-color: #ffede0;
+}
+.theme-yel .side-menu .menu-head,
+.theme-yel .block-head,
+.theme-yel .block-foot{
+    background-image: linear-gradient(#aaa, #9a5104);
+}
+.theme-yel .navs-head .on .navs-title{
+    background-color: #ffede0;
+    color: #ff7b00;
+}
+.theme-yel .right-head{
+    border-color: #ffede0;
+}
+.theme-yel .block-body{
+    border-color: #9a5104;
+}
+.theme-yel .side-menu ul {
+    background-color: #333;
+}
+.theme-yel .page-login{
+    background-image: linear-gradient(#333, #9a5104);
+}
+.theme-yel .login-container{
+    background-color: #ff7b00;
+}
+.theme-yel .system-logo{
+    border-color: #9a5104;
+}
+.theme-yel .row-buttons button{
+    background-image: linear-gradient(#9a5104, #333);
+}
+.theme-yel .row-buttons button:hover{
+    background-image: linear-gradient(#9a5104, #000);
+}
+.theme-yel .find-pass{
+    color: #ddd;
+}
+.theme-yel .find-pass:hover{
+    color: #fff;
+}
+
+
+/* 附加皮肤 red */
+.theme-switch a[data-theme='theme-red'] span{
+    background-color: #e86015 ;
+}
+
+.theme-red .frame-top,
+.theme-red .frame-bottom,
+.theme-red .right-bar{
+    background-color: #e86015;
+}
+.theme-red .frame-middle{
+    background-color: #862f00;
+}
+.theme-red .side-menu .menu-head,
+.theme-red  li a{
+    color: #bbb;
+}
+.theme-red .right-bar,
+.theme-red .frame-top,
+.theme-red .frame-bottom{
+    border-color: #ffb09f;
+}
+.theme-red .siderbar-switch{
+    background-color: #eceff1;
+}
+.theme-red .side-menu .menu-head,
+.theme-red .block-head,
+.theme-red .block-foot{
+    background-image: linear-gradient(#333, #862f00);
+}
+.theme-red .navs-head .on .navs-title{
+    background-color: #eceff1;
+    color: #e86015;
+}
+.theme-red .right-head{
+    border-color: #eceff1;
+}
+.theme-red .block-body{
+    border-color: #862f00;
+}
+.theme-red .page-login{
+    background-image: linear-gradient(#333, #862f00);
+}
+.theme-red .login-container{
+    background-color: #e86015;
+}
+.theme-red .system-logo{
+    border-color: #9a5104;
+}
+.theme-red .row-buttons button{
+    background-image: linear-gradient(#862f00, #333);
+}
+.theme-red .row-buttons button:hover{
+    background-image: linear-gradient(#862f00, #000);
+}
+.theme-red .find-pass{
+    color: #ddd;
+}
+.theme-red .find-pass:hover{
+    color: #fff;
 }
