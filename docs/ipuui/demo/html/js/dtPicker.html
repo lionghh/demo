@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>选择器</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../../../dist/css/ipu.css">
+    <link rel="stylesheet" type="text/css" href="../../dep/css/awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../../biz/css/demo.css">
+
+
+    <script src="../../dep/js/requirejs/require.js"></script>
+    <script src="../../biz/js/require-config-deep.js"></script>
+    <script src="../../biz/js/dtPicker.js"></script>
+
+    <style>
+        .ipu-list-form .ipu-list-item-label{
+            width: 40%;
+        }
+        .ipu-list-item-textarea{
+            min-height: 2rem;
+        }
+    </style>
+</head>
+<body>
+<div class="ipu-row-flex ipu-row-flex-ver">
+    <div class="ipu-col ipu-col-auto">
+        <header class="ipu-toolbar">
+            <a class="ipu-icon fa fa-chevron-left ipu-fn-left" href="javascript:history.back(-1);"></a>
+            <a class="ipu-icon fa fa-home ipu-fn-right" href="../../index.html"></a>
+            <h1 class="ipu-toolbar-title">日历</h1>
+        </header>
+    </div>
+    <div class="ipu-col">
+        <div class="ipu-flex-content page-content" id="scrollDemo">
+            <div class="ipu-list ipu-list-form">
+                <ul>
+                    <li class="ipu-list-item">
+                        <div class="ipu-list-item-inner">
+                            <div class="ipu-list-item-label">
+                                yyyy-mm-dd hh:mi：
+                            </div>
+                            <div class="ipu-list-item-input-wrap">
+                                <input class="ipu-list-item-input" type="text" placeholder="请选择" readonly id="testDate1">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="ipu-list-item">
+                        <div class="ipu-list-item-inner">
+                            <div class="ipu-list-item-label">
+                                yyyy-mm-dd：
+                            </div>
+                            <div class="ipu-list-item-input-wrap">
+                                <input class="ipu-list-item-input" type="text" placeholder="请选择" readonly id="testDate2">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="ipu-list-item">
+                        <div class="ipu-list-item-inner">
+                            <div class="ipu-list-item-label">
+                                hh:mi：
+                            </div>
+                            <div class="ipu-list-item-input-wrap">
+                                <input class="ipu-list-item-input" type="text" placeholder="请选择" readonly id="testDate3">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="ipu-list-item">
+                        <div class="ipu-list-item-inner">
+                            <div class="ipu-list-item-label">
+                                yyyy-mm：
+                            </div>
+                            <div class="ipu-list-item-input-wrap">
+                                <input class="ipu-list-item-input" type="text" placeholder="请选择" readonly id="testDate4">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="ipu-list-item">
+                        <div class="ipu-list-item-inner">
+                            <div class="ipu-list-item-label">
+                                yyyy-mm-dd hh：
+                            </div>
+                            <div class="ipu-list-item-input-wrap">
+                                <input class="ipu-list-item-input" type="text" placeholder="请选择" readonly id="testDate5">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="ipu-list-item">
+                        <div class="ipu-list-item-inner">
+                            <div class="ipu-list-item-label">
+                                起始时间：
+                            </div>
+                            <div class="ipu-list-item-input-wrap">
+                                <input class="ipu-list-item-input" type="text" placeholder="请选择" readonly id="testDateBegin">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="ipu-list-item">
+                        <div class="ipu-list-item-inner">
+                            <div class="ipu-list-item-label">
+                                结束时间：
+                            </div>
+                            <div class="ipu-list-item-input-wrap">
+                                <input class="ipu-list-item-input" type="text" placeholder="请选择" readonly id="testDateEnd">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="ipu-list-item">
+                        <div class="ipu-list-item-inner">
+                            <div class="ipu-list-item-label">
+                                返回值：
+                            </div>
+                            <div class="ipu-list-item-input-wrap">
+                                <textarea class="ipu-list-item-textarea result-value" readonly=""></textarea>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+         <!--   <p>选择器</p>
+            <div>
+                <label>选择器Lv1：</label>
+                <input type="text" name="lv1" readonly>
+            </div>
+            <div>
+                <label>选择器Lv2：</label>
+                <input type="text" name="lv2" readonly>
+            </div>
+            <div>
+                <label>时间选择1：</label>
+                <input type="text" id="testDate1" readonly  placeholder="yyyy-MM-dd hh:mm">
+
+            </div>
+            <div>
+                <label>时间选择2：</label>
+                <input type="text" id="testDate2" readonly  placeholder="yyyy-MM-dd">
+            </div>
+            <div>
+                <label>时间选择3：</label>
+                <input type="text" id="testDate3" readonly  placeholder="hh:mm">
+            </div>
+            <div>
+                <label>时间选择4：</label>
+                <input type="text" id="testDate4" readonly  placeholder="yyyy-mm">
+            </div>
+            <div>
+                <label>时间选择5：</label>
+                <input type="text" id="testDate5" readonly  placeholder="yyyy-mm-dd hh">
+            </div>
+
+            <div>
+                <label>时间选择6：</label>
+                <input type="text" id="testDate6" readonly  placeholder="起始时间">
+            </div>
+            <div>
+                <label>时间选择7：</label>
+                <input type="text" id="testDate7" readonly  placeholder="结束时间">
+            </div>
+-->
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

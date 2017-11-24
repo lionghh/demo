@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>display-首页</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../dist/css/ipu.css">
+    <link rel="stylesheet" type="text/css" href="dep/css/awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="biz/css/demo.css">
+
+    <script src="dep/js/requirejs/require.js"></script>
+    <script src="biz/js/require-config.js"></script>
+    <script src="biz/js/index.js"></script>
+</head>
+<body>
+<div class="ipu-row-flex ipu-row-flex-ver">
+    <div class="ipu-col ipu-col-auto">
+        <header class="ipu-toolbar">
+            <h1 class="ipu-toolbar-title">首页</h1>
+        </header>
+    </div>
+    <div class="ipu-col">
+        <div class="ipu-flex-content">
+            <div class="ipu-nav-content">
+                <ul>
+                    <li>
+                        <div class="ipu-flex-content">
+                            <ul class="ipu-grid-nine">
+                                <li>
+                                    <a href="html/template/login.html">
+                                        <span class="ipu-icon fa fa-lemon-o"></span>
+                                        <p>登录</p>
+                                    </a>
+                                </li>
+                                <li class="ipu-col-33 ipu-text-center">
+                                    <a href="html/js/refresh-index.html">
+                                        <span class="ipu-icon fa fa-search"></span>
+                                        <p>查询</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ipu-flex-content" id="scrollDemo">
+                            <ul class="ipu-grid-nine">
+                                <li>
+                                    <a href="html/js/carousel.html">
+                                        <span class="ipu-icon fa fa-sliders"></span>
+                                        <p>轮播</p>
+                                    </a>
+                                </li>
+                                <li class="ipu-col-33 ipu-text-center">
+                                    <a href="html/js/refresh-index.html">
+                                        <span class="ipu-icon fa fa-refresh"></span>
+                                        <p>refresh刷新</p>
+                                    </a>
+                                </li>
+                                <li class="ipu-col-33 ipu-text-center">
+                                    <a href="html/js/tab-index.html">
+                                        <span class="ipu-icon fa fa-tablet"></span>
+                                        <p>tab</p>
+                                    </a>
+                                </li>
+                                <li class="ipu-col-33 ipu-text-center">
+                                    <a href="html/js/navBar-index.html">
+                                        <span class="ipu-icon fa fa-adjust"></span>
+                                        <p>导航</p>
+                                    </a>
+                                </li>
+                                <li class="ipu-col-33 ipu-text-center">
+                                    <a href="html/js/modal.html">
+                                        <span class="ipu-icon fa fa-square"></span>
+                                        <p>模拟框</p>
+                                    </a>
+                                </li>
+                                <li >
+                                    <a href="html/js/popPicker.html">
+                                        <span class="ipu-icon fa fa-pie-chart"></span>
+                                        <p>选择器</p>
+                                    </a>
+                                </li>
+                                <li >
+                                    <a href="html/js/dtPicker.html">
+                                        <span class="ipu-icon fa fa-calendar"></span>
+                                        <p>日历</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="html/js/progressBar.html">
+                                        <span class="ipu-icon fa fa-bandcamp"></span>
+                                        <p>进度条</p>
+                                    </a>
+                                </li>
+                                <li >
+                                    <a href="html/js/page-index.html">
+                                        <span class="ipu-icon fa fa-pagelines"></span>
+                                        <p>单页面应用</p>
+                                    </a>
+                                </li>
+                                <li >
+                                    <a href="html/js/tap.html">
+                                        <span class="ipu-icon fa fa-pie-chart"></span>
+                                        <p>点击效果</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="ipu-current">
+                        <ul class="ipu-grid-nine">
+                            <li >
+                                <a href="html/static/text.html">
+                                    <span class="ipu-icon fa fa-text-width"></span>
+                                    <p>文本</p>
+                                </a>
+                            </li>
+                            <li >
+                                <a href="html/static/icon.html">
+                                    <span class="ipu-icon fa fa-info-circle ipu-txt-success"></span>
+                                    <p>图标</p>
+                                </a>
+                            </li>
+                            <li >
+                                <a href="html/static/button.html">
+                                    <span class="ipu-icon fa fa-black-tie ipu-txt-highlight"></span>
+                                    <p>按钮</p>
+                                </a>
+                            </li>
+                            <li >
+                                <a href="html/static/img.html">
+                                    <span class="ipu-icon fa fa-image ipu-txt-primary"></span>
+                                    <p>图片</p>
+                                </a>
+                            </li>
+                            <li >
+                                <a href="html/static/assist.html">
+                                    <span class="ipu-icon fa fa-image ipu-txt-warning"></span>
+                                    <p>辅助</p>
+                                </a>
+                            </li>
+                            <li >
+                                <a href="html/static/layout.html">
+                                    <span class="ipu-icon fa fa-square-o ipu-txt-color-1"></span>
+                                    <p>布局</p>
+                                </a>
+                            </li>
+                            <li >
+                                <a href="html/static/grid-layout.html">
+                                    <span class="ipu-icon fa fa-square ipu-txt-color-2"></span>
+                                    <p>栅格</p>
+                                </a>
+                            </li>
+
+                            <li >
+                                <a href="html/static/grid.html">
+                                    <span class="ipu-icon fa fa-align-left ipu-txt-color-3"></span>
+                                    <p>宫格</p>
+                                </a>
+                            </li>
+                            <li >
+                                <a href="html/static/toolbar.html">
+                                    <span class="ipu-icon fa fa-bars ipu-txt-color-4"></span>
+                                    <p>工具栏</p>
+                                </a>
+                            </li>
+                            <li >
+                                <a href="html/static/table.html">
+                                    <span class="ipu-icon fa fa-table ipu-txt-color-5"></span>
+                                    <p>表格</p>
+                                </a>
+                            </li>
+                            <li >
+                                <a href="html/static/badage.html">
+                                    <span class="ipu-icon fa fa-bandcamp ipu-txt-color-6"></span>
+                                    <p>徽标</p>
+                                </a>
+                            </li>
+                            <li >
+                                <a href="html/static/category.html">
+                                    <span class="ipu-icon fa fa-calendar-times-o ipu-txt-color-7"></span>
+                                    <p>类目</p>
+                                </a>
+                            </li>
+                            <li >
+                                <a href="html/static/list.html">
+                                    <span class="ipu-icon fa fa-list ipu-txt-color-8"></span>
+                                    <p>列表</p>
+                                </a>
+                            </li>
+                            <li >
+                                <a href="html/static/card.html">
+                                    <span class="ipu-icon fa fa-address-card"></span>
+                                    <p>卡片</p>
+                                </a>
+                            </li>
+                            <li >
+                                <a href="html/static/timeline.html">
+                                    <span class="ipu-icon fa fa-line-chart"></span>
+                                    <p>时间轴</p>
+                                </a>
+                            </li>
+                            <li >
+                                <a href="html/static/newform.html">
+                                    <span class="ipu-icon fa fa-flag-o"></span>
+                                    <p>新表单</p>
+                                </a>
+                            </li>
+                            <li >
+                                <a href="html/static/form.html">
+                                    <span class="ipu-icon fa fa-file"></span>
+                                    <p>表单</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="ipu-grid-nine">
+                            <li >
+                                <a href="html/other/sign.html">
+                                    <span class="ipu-icon fa fa-sign-in"></span>
+                                    <p>签名</p>
+                                </a>
+                            </li>
+                            <li >
+                                <a href="html/other/drag.html">
+                                    <span class="ipu-icon fa fa-info-circle ipu-txt-success"></span>
+                                    <p>拖动</p>
+                                </a>
+                            </li>
+                            <li >
+                                <a href="html/other/iscroll.html">
+                                    <span class="ipu-icon fa fa-sellsy ipu-txt-highlight"></span>
+                                    <p>滚动</p>
+                                </a>
+                            </li>
+                        </ul>
+                        iScroll.js
+                        hammer.js
+                        fastclick.js
+                        画图.js
+                        手动组件
+                        echart?
+                        模板引擎apiTemplate?
+                    </li>
+                    <li>
+                        标签5的内容标签5的内容标签5的内容标签5的内容标签5的内容标签5的内容标签5的内容标签5的内容
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="ipu-col ipu-col-auto">
+        <nav class="ipu-navbar ">
+            <a class="ipu-navbar-item " href="javascript:;">
+                <span class="ipu-icon fa fa-home"></span>
+                <span class="ipu-navbar-item-label">模板</span>
+            </a>
+            <a class="ipu-navbar-item " href="javascript:;">
+                <span class="ipu-icon fa fa-dashcube"></span>
+                <span class="ipu-navbar-item-label">JS组件</span>
+            </a>
+            <a class="ipu-navbar-item ipu-current" href="javascript:;">
+                <span class="ipu-icon fa fa-map"></span>
+                <span class="ipu-navbar-item-label">静态组件</span>
+            </a>
+            <a class="ipu-navbar-item" href="javascript:;">
+                <span class="ipu-icon fa fa-mortar-board"></span>
+                <span class="ipu-navbar-item-label">更多</span>
+            </a>
+            <a class="ipu-navbar-item" href="javascript:;">
+                <span class="ipu-icon fa fa-info-circle"></span>
+                <span class="ipu-navbar-item-label">关于</span>
+            </a>
+        </nav>
+    </div>
+</div>
+
+</body>
+</html>

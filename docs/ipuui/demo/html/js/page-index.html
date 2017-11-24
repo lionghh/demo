@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>display-单页面</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../../../dist/css/ipu.css">
+    <link rel="stylesheet" type="text/css" href="../../dep/css/awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../../biz/css/demo.css">
+
+    <script src="../../dep/js/requirejs/require.js"></script>
+    <script src="../../biz/js/require-config-deep.js"></script>
+    <script src="../../biz/js/page-index.js"></script>
+</head>
+<body>
+
+    <!--
+        最外层两个div ipu-pages, ipu-page，用来配合page的功能，
+        若第一个页面没有这两个div，js会自动添加，但一些极端情况下可能样式有问题，建议首页参考此结构
+        首页外其它页面无需此结构
+    -->
+    <div class="ipu-pages">
+        <div class="ipu-page">
+
+            <div class="ipu-row-flex ipu-row-flex-ver">
+                <div class="ipu-col ipu-col-auto">
+                    <header class="ipu-toolbar">
+                        <a class="ipu-icon fa fa-arrow-circle-left ipu-fn-left" href="javascript:history.back(-1);"></a>
+                        <a class="ipu-icon fa fa-home ipu-fn-right" href="../../index.html"></a>
+                        <h1 class="ipu-toolbar-title">单页面-首页</h1>
+                    </header>
+                </div>
+                <div class="ipu-col">
+                    <section id="list" class="page-content">
+
+                        <div class="ipu-list">
+                            <ul>
+                                <li>
+                                    <a class="ipu-list-item ipu-list-item-link page-1" href="javascript:;">
+                                        <div class="ipu-list-item-inner">
+                                            <div class="ipu-list-item-title">GETpage-1</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="ipu-list-item ipu-list-item-link page-2" href="javascript:;">
+                                        <div class="ipu-list-item-inner">
+                                            <div class="ipu-list-item-title">GETpage-2</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="ipu-list-item ipu-list-item-link page-with-name" href="javascript:;">
+                                        <div class="ipu-list-item-inner">
+                                            <div class="ipu-list-item-title">GET-with-name</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="ipu-list-item ipu-list-item-link page-post" href="javascript:;">
+                                        <div class="ipu-list-item-inner">
+                                            <div class="ipu-list-item-title">
+                                                POST页面
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </section>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="page-back-home-index">
+        回到首页
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>签名</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../../../dist/css/ipu.css">
+    <link rel="stylesheet" type="text/css" href="../../dep/css/awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../../biz/css/demo.css">
+
+
+    <script src="../../dep/js/requirejs/require.js"></script>
+    <script src="../../biz/js/require-config-deep.js"></script>
+    <script src="../../biz/js/sign.js"></script>
+
+    <style>
+        .draw-container{
+            position: relative;
+            height: 2rem;
+            top:0;
+            left:0;
+            background-color: #eee;
+        }
+        .lc-drawing,
+        .lc-drawing canvas{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        .auto img,
+        .fix img{
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+<div class="ipu-row-flex ipu-row-flex-ver">
+    <div class="ipu-col ipu-col-auto">
+        <header class="ipu-toolbar">
+            <a class="ipu-icon fa fa-chevron-left ipu-fn-left" href="javascript:history.back(-1);"></a>
+            <a class="ipu-icon fa fa-home ipu-fn-right" href="../../index.html"></a>
+            <h1 class="ipu-toolbar-title">签名</h1>
+        </header>
+    </div>
+    <div class="ipu-col">
+        <div class="ipu-flex-content page-content" id="scrollDemo">
+
+            <!-- 默认有一些样式要求，未引入库本身的css，自定义了一下，见本页css定义 -->
+            <div class="draw-container">
+            </div>
+
+            <div class="ipu-btn-wrap">
+                <button class="ipu-btn ipu-btn-s btn-confirm">确认</button>
+                <button class="ipu-btn ipu-btn-s ipu-btn-warning btn-clear">清除</button>
+            </div>
+
+            <a href="http://literallycanvas.com/" target="_blank">官网：http://literallycanvas.com/</a>
+            <div class="auto">
+                <img alt="">
+            </div>
+            <div class="fix">
+                <img alt="">
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

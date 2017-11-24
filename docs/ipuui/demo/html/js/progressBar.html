@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>进度条</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../../../dist/css/ipu.css">
+    <link rel="stylesheet" type="text/css" href="../../dep/css/awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../../biz/css/demo.css">
+
+    <script src="../../dep/js/requirejs/require.js"></script>
+    <script src="../../biz/js/require-config-deep.js"></script>
+    <script src="../../biz/js/progressBar.js"></script>
+</head>
+<body>
+
+<div class="ipu-row-flex ipu-row-flex-ver">
+    <div class="ipu-col ipu-col-auto">
+        <header class="ipu-toolbar">
+            <a class="ipu-icon fa fa-chevron-left ipu-fn-left" href="javascript:history.back(-1);"></a>
+            <a class="ipu-icon fa fa-home ipu-fn-right" href="../../index.html"></a>
+            <h1 class="ipu-toolbar-title">进度条</h1>
+        </header>
+    </div>
+    <div class="ipu-col">
+        <div style="margin: 0 15px;">
+            <br>
+            <div>默认</div>
+            <div class="ipu-ipu-progress ">
+                <span class="ipu-progressbar " style="transform: translate3d(0%,0,0);"></span>
+            </div>
+            <br>
+            <div>成功</div>
+            <div class="ipu-ipu-progress ipu-progressbar-success">
+                <span class="ipu-progressbar " style="transform: translate3d(-20%,0,0);"></span>
+            </div>
+            <br>
+            <div>高亮</div>
+            <div class="ipu-ipu-progress ipu-progressbar-highlight">
+                <span class="ipu-progressbar " style="transform: translate3d(-40%,0,0);"></span>
+            </div>
+            <br>
+            <div>警告</div>
+            <div class="ipu-ipu-progress ipu-progressbar-warning">
+                <span class="ipu-progressbar " style="transform: translate3d(-60%,0,0);"></span>
+            </div>
+            <br>
+            <div>自定义</div>
+            <div class="ipu-ipu-progress " id="myProgressBar">
+                <span class="ipu-progressbar " style="transform: translate3d(-80%,0,0);"></span>
+            </div>
+
+            <div>设置进度：</div>
+            <div class="">
+                <button id="pro1" class="ipu-btn ipu-btn-s" value="20">20%</button>
+                <button id="pro2" class="ipu-btn ipu-btn-s" value="40">40%</button>
+                <button id="pro3" class="ipu-btn ipu-btn-s" value="60">60%</button>
+                <button id="pro4" class="ipu-btn ipu-btn-s" value="80">80%</button>
+                <button id="pro5" class="ipu-btn ipu-btn-s" value="100">100%</button>
+            </div>
+            <br>
+            <div>
+                <label>设置级别：</label><br>
+                <button id="set2" class="ipu-btn ipu-btn-s">默认</button>
+                <button id="set3" class="ipu-btn ipu-btn-s">成功</button>
+                <button id="set4" class="ipu-btn ipu-btn-s">警告</button>
+                <button id="set5" class="ipu-btn ipu-btn-s">高亮</button>
+            </div>
+            <br>
+            <div>
+                <button id="set6" class="ipu-btn ipu-btn-s">获取进度</button>
+                当前进度：<span id="input2"></span>%
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

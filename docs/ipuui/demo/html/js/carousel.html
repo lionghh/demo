@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>轮播</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../../../dist/css/ipu.css">
+    <link rel="stylesheet" type="text/css" href="../../dep/css/awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../../biz/css/demo.css">
+
+    <script src="../../dep/js/requirejs/require.js"></script>
+    <script src="../../biz/js/require-config-deep.js"></script>
+    <script src="../../biz/js/carousel.js"></script>
+</head>
+<body>
+<div class="ipu-row-flex ipu-row-flex-ver">
+    <div class="ipu-col ipu-col-auto">
+        <header class="ipu-toolbar">
+            <a class="ipu-icon fa fa-angle-left ipu-fn-left" href="javascript:history.back(-1);"></a>
+            <a class="ipu-icon fa fa-home ipu-fn-right" href="../../index.html"></a>
+            <h1 class="ipu-toolbar-title">轮播</h1>
+        </header>
+    </div>
+    <div class="ipu-col">
+        <div class="ipu-flex-content" id="scrollDemo">
+            <div>
+                <div class="demo-desc ipu-fn-p">carousel</div>
+                <div class="ipu-carousel">
+                    <ul class="ipu-carousel-wrapper">
+                        <li class=""><a href="javascript:;"><img src="../../biz/img/01.jpg" alt=""></a></li>
+                        <li class="ipu-current"><img src="../../biz/img/02.jpg" alt=""></li>
+                        <li class=""><img src="../../biz/img/03.jpg" alt=""></li>
+                        <li class=""><img src="../../biz/img/04.jpg" alt=""></li>
+                    </ul>
+                </div>
+                <div class="ipu-btn-wrap">
+                    <button id="prev1" class="ipu-btn ipu-btn-s">上一张</button>
+                    <button id="stop1" class="ipu-btn ipu-btn-s">停止</button>
+                    <button id="play1" class="ipu-btn ipu-btn-s">播放</button>
+                    <button id="forward1" class="ipu-btn ipu-btn-s">到第3张</button>
+                    <button id="next1" class="ipu-btn ipu-btn-s">下一张</button>
+                </div>
+                <div class="demo-desc ipu-fn-p">hammerCarousel</div>
+                <div class="ipu-carousel ipu-hammer-carousel">
+                    <ul class="ipu-carousel-wrapper">
+                        <li class=""><img src="../../biz/img/01.jpg" alt=""></li>
+                        <li class=""><img src="../../biz/img/02.jpg" alt=""></li>
+                        <li class=""><img src="../../biz/img/03.jpg" alt=""></li>
+                        <li class=""><img src="../../biz/img/04.jpg" alt=""></li>
+                        <li class="">
+                            <div class="">
+                                并不一定是图片,也可以在这里面写其他内容并不一定是图片,也可以在这里面写其他内容并不一定是图片,也可以在这里面写其他内容并不一定是图片,也可以在这里面写其他内容
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ipu-btn-wrap">
+                    <button id="prev" class="ipu-btn ipu-btn-s">上一张</button>
+                    <button id="stop" class="ipu-btn ipu-btn-s">停止</button>
+                    <button id="play" class="ipu-btn ipu-btn-s">播放</button>
+                    <button id="forward" class="ipu-btn ipu-btn-s">到第3张</button>
+                    <button id="next" class="ipu-btn ipu-btn-s">下一张</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

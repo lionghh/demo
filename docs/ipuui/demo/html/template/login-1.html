@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>登录-1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../../../dist/css/ipu.css">
+    <link rel="stylesheet" type="text/css" href="../../dep/css/awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../../biz/css/demo.css">
+
+    <script src="../../dep/js/requirejs/require.js"></script>
+    <script src="../../biz/js/require-config-deep.js"></script>
+    <style>
+        .app-logo {
+            padding: .4rem 0;
+        }
+        .app-logo .logo-img {
+            width: .6rem;
+            height: .6rem;
+            margin:  0 auto;
+            display: block;
+            background-color: #eee;
+        }
+        .logo-name{
+            text-align: center;
+            font-size: .13rem;
+            margin-top: .05rem
+        }
+        .login-form-savepass  .ipu-checkbox{
+        }
+        .login-form{
+            margin: 0 .25rem;
+        }
+        .login-form .login-form-row{
+            height:.55rem;
+            box-sizing: border-box;
+            border:1px solid #e8e8e8;
+            background-size: .16rem auto;
+            position: relative;
+            background-color: #fcfcfc;
+        }
+        .login-form .login-form-input{
+            display: block;
+            border: none;
+            font-size: .15rem;
+            color: #4A4E5A;
+            padding:.02rem .44rem 0rem .55rem ;
+            box-sizing: border-box;
+            width: 100%;
+            background: none;
+            position: absolute;
+            top:0;
+            left:0;
+            bottom: 0;
+            right: 0;
+        }
+        .login-form .login-form-input::-webkit-input-placeholder {
+            color: #999;
+        }
+        .login-form .login-form-input:focus::-webkit-input-placeholder {
+            color: #4A4E5A;
+        }
+        .login-form-row-pass .login-form-input{
+            padding-right: 1rem;
+        }
+        .login-form .login-form-row.login-form-row-account{
+            border-radius: 0.1rem 0.1rem 0 0;
+        }
+        .login-form .login-form-row.login-form-row-pass{
+            border-top: none;
+            border-radius: 0 0 .1rem .1rem;
+        }
+        .login-form-row-verify .login-form-input{
+            padding-right: 1.3rem;
+        }
+        .login-form-row .fa{
+            position: absolute;
+            font-size: .22rem;
+            color: #aaa;
+            top:.17rem;
+            left: .21rem;
+        }
+
+        .login-form-button{
+            display: block;
+            width: 100%;
+            border-radius: 4px;
+            line-height: .5rem;
+            font-size: .16rem;
+            margin-top: .20rem;
+        }
+        .login-form-button:disabled{
+            opacity: .3;
+        }
+        .login-form-passOp{
+            margin-top: .18rem;
+            font-size: .13rem;
+            line-height: .2rem;
+        }
+        .login-form-fogetpass{
+            float: right;
+            font-size: .15rem;
+            padding: 0 .03rem;
+        }
+        .login-form-savepass{
+            display:inline-block;
+            color: #a3a4aa;
+            font-size: 0.14rem;
+        }
+        .pass-text:after{
+            height: .1rem;
+            border: 1px solid #d6d6d6;
+            position: absolute;
+            top:.21rem;
+            right: -.12rem;
+            content: '';
+        }
+        .ipu-checkbox input:before{
+            border-color: #e8e8e8;
+        }
+        .login-form-row  .fa-times-circle{
+            display: none;
+            left: auto;
+            top:.2rem;
+            right: .15rem;
+            font-size: .15rem;
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+<div class="ipu-row-flex ipu-row-flex-ver">
+    <div class="ipu-col ipu-col-auto">
+        <header class="ipu-toolbar">
+            <h1 class="ipu-toolbar-title">登录</h1>
+        </header>
+    </div>
+    <div class="ipu-col">
+        <div class="ipu-flex-content ">
+            <div class="app-logo">
+                <div class="logo-img">logo</div>
+                <div class="logo-name ipu-txt-primary">艾扑秀</div>
+            </div>
+            <form class="login-form" action="index.html">
+                <div class="login-form-row login-form-row-account">
+                    <span class="fa fa-user"></span>
+                    <span class="fa fa-times-circle"></span>
+                    <input type="text" class="login-form-input" placeholder="用户名">
+                </div>
+                <div class="login-form-row login-form-row-pass">
+                    <span class="fa fa-lock"></span>
+                    <span class="fa fa-times-circle"></span>
+                    <input type="password" class="login-form-input" placeholder="密码">
+                </div>
+                <div class="login-form-passOp">
+                    <a href="javascript:;" class="login-form-fogetpass ">忘记密码</a>
+                    <div class="login-form-savepass">
+                        <label class="ipu-checkbox ipu-checkbox-square ipu-checkbox-s">
+                            <input type="checkbox" name="checkbox2">
+                        </label>
+                        记住密码
+                    </div>
+                </div>
+                <div>
+                    <button class="ipu-btn login-form-button">登录</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

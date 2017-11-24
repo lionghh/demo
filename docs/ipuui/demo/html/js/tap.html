@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>点击测试</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../../../dist/css/ipu.css">
+    <link rel="stylesheet" type="text/css" href="../../dep/css/awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../../biz/css/demo.css">
+
+    <script src="../../dep/js/requirejs/require.js"></script>
+    <script src="../../biz/js/require-config-deep.js"></script>
+    <script src="../../biz/js/tap.js"></script>
+
+    <style>
+        .d1,
+        .d2{
+            background-color: #eee;
+            height: 1.5rem;
+            margin: .1rem 0;
+            padding: .05rem;
+        }
+        .d2.ipu-active,
+        .d1:active{
+            background-color: #999;
+        }
+
+        body a{
+            color: #666;
+        }
+
+        .test-link.ipu-active,
+        .test-link:active{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="ipu-row-flex ipu-row-flex-ver">
+    <div class="ipu-col ipu-col-auto">
+        <header class="ipu-toolbar">
+            <a class="ipu-icon fa fa-chevron-left ipu-fn-left" href="javascript:history.back(-1);"></a>
+            <a class="ipu-icon fa fa-home ipu-fn-right" href="../../index.html"></a>
+            <h1 class="ipu-toolbar-title">点击效果</h1>
+        </header>
+    </div>
+    <div class="ipu-col">
+        <div class="ipu-flex-content" id="scrollDemo">
+            <div>
+                <div class="d1">
+                    使用css的伪类:active<br>
+                    两个元素都需要点击效果时，两者不能嵌套，如a中有b，都有点击效果，则点击b时，b和a都会有点击效果
+                    <br>  <br>
+                    <a href="javascript:;" class="test-link">点我背景和文字颜色都变更，其它区域只变更背景色</a>
+                </div>
+                <div class="d2">
+                    js实现，依赖jquery绑定的click事件<br>
+                    点击元素时，元素或离被点击元素最近的有绑定jquery click事件父元素会增加额外class ipu-active，
+                    <br><br>
+                    <a href="javascript:;" class="test-link">点变更颜色，但背景色不变，点其它区域只变更背景色</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

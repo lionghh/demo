@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>模板</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../../../dist/css/ipu.css">
+    <link rel="stylesheet" type="text/css" href="../../dep/css/awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../../biz/css/demo.css">
+
+    <script src="../../dep/js/requirejs/require.js"></script>
+    <script src="../../biz/js/require-config-deep.js"></script>
+</head>
+<body>
+<div class="ipu-row-flex ipu-row-flex-ver">
+    <div class="ipu-col ipu-col-auto">
+        <header class="ipu-toolbar">
+            <a class="ipu-icon fa fa-home ipu-fn-right" href="../../index.html"></a>
+            <h1 class="ipu-toolbar-title">模板页</h1>
+        </header>
+    </div>
+    <div class="ipu-col">
+        <div class="ipu-flex-content">
+            <div class="ipu-nav-content">
+                <ul>
+                    <li>
+                        <div class="ipu-flex-content" >
+                            <div class="">
+                                推荐使用栅格中介绍的样式来布局页面，其优势相比较传统css布局，flex布局是动态化的
+                                通常一个典型的页面分为标题块，内容块
+                                下面将主要介绍以下几个class类及作用
+<pre><code>&lt;body&gt;
+    &lt;div class="ipu-row-flex ipu-row-flex-ver"&gt;
+        &lt;div class="ipu-col ipu-col-auto"&gt;
+            顶部
+        &lt;/div&gt;
+        &lt;div class="ipu-col"&gt;
+            内容区
+        &lt;/div&gt;
+        &lt;div class="ipu-col ipu-col-auto"&gt;
+            底部
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;</code></pre>
+                            </div>
+                            <div class="demo-item">
+                                <p class="demo-desc">ipu-row-flex</p>
+                                <div class="demo-block">
+                                   将元素声明为flex展示，元素的宽度是100%，默认flex元素子元素是纵向排列的
+                                </div>
+                            </div>
+                            <div class="demo-item">
+                                <p class="demo-desc">ipu-row-flex-ver</p>
+                                <div class="demo-block">
+                                    ipu-row-flex的修饰，配合ipu-row-flex使用，此class声明元素子元素垂直排列，元素的高度是100%
+                                </div>
+                            </div>
+                            <div class="demo-item">
+                                <p class="demo-desc">ipu-col</p>
+                                <div class="demo-block">
+                                    ipu-col作为ipu-row-flex的直接子元素，与其它ipu-col子元素平均分配父元素剩余的空间
+                                </div>
+                            </div>
+                            <div class="demo-item">
+                                <p class="demo-desc">ipu-col-auto</p>
+                                <div class="demo-block">
+                                    是ipu-col的修饰，配合ipu-col使用，元素占据空间由其内容本身决定，不参与分配父元素剩余空间
+                                </div>
+                            </div>
+                            <div class="ipu-list">
+                                <ul>
+                                    <li>
+                                        <a class="ipu-list-item ipu-list-item-link" href="list-1.html">
+                                            <div class="ipu-list-item-inner">
+                                                <div class="ipu-list-item-title">页面</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="ipu-list-item ipu-list-item-link" href="javascript:;">
+                                            <div class="ipu-list-item-inner">
+                                                <div class="ipu-list-item-title">列表项</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="ipu-list-item ipu-list-item-link" href="javascript:;">
+                                            <div class="ipu-list-item-inner">
+                                                <div class="ipu-list-item-title">
+                                                    列表项
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ipu-list">
+                            <ul>
+                                <li>
+                                    <a class="ipu-list-item ipu-list-item-link" href="login.html">
+                                        <div class="ipu-list-item-inner">
+                                            <div class="ipu-list-item-title">登录</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="ipu-list-item ipu-list-item-link" href="javascript:;">
+                                        <div class="ipu-list-item-inner">
+                                            <div class="ipu-list-item-title">注册</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="ipu-list-item ipu-list-item-link" href="javascript:;">
+                                        <div class="ipu-list-item-inner">
+                                            <div class="ipu-list-item-title">
+                                                列表
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="ipu-list-item ipu-list-item-link" href="javascript:;">
+                                        <div class="ipu-list-item-inner">
+                                            <div class="ipu-list-item-title">
+                                                查询
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="ipu-list-item ipu-list-item-link" href="javascript:;">
+                                        <div class="ipu-list-item-inner">
+                                            <div class="ipu-list-item-title">
+                                                表单
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="ipu-list-item ipu-list-item-link" href="javascript:;">
+                                        <div class="ipu-list-item-inner">
+                                            <div class="ipu-list-item-title">
+                                                详情
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        工程参考
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

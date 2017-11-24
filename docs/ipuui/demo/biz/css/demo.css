@@ -1,0 +1,95 @@
+
+.demo-item{
+    margin: .1rem;
+}
+.demo-desc {
+    font-size: .17rem;
+    color: #7CAE23;
+}
+.demo-block {
+    position: relative;
+    padding: .05rem 0;
+}
+.demo-txt>p{
+    padding: .05rem 0;
+}
+.page-content{
+    padding: .1rem 0;
+}
+.demo-fn-border>div{
+    margin: .1rem;
+}
+.demo-fn-contain{
+    background-color: #ddd;
+    margin: .05rem;
+    overflow: hidden;
+}
+.demo-fn-contain>div{
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+.demo-fn-align>div{
+    margin: .1rem;
+    background-color: #ddd;
+}
+.ipu-carousel-wrapper>li img{
+    width: 100%;
+    height: 184px;
+    display: block;
+}
+pre code{
+    white-space: pre-wrap;
+}
+.ipu-list-item-media img{
+    width: .8rem;
+    height: .8rem;
+}
+#layout .ipu-flex {
+    border: 1px solid #ddd;
+    min-height: 80px;
+    margin-bottom: 10px;
+}
+#grid .ipu-row-flex-ver{
+    min-height: 100px;
+}
+#grid .ipu-col {
+    padding: 5px;
+    background: #777;
+    text-align: center;
+    border: 1px solid #ddd;
+    color: #fff;
+}
+#layout .ipu-tiled li{
+    background-color: #eee;
+    min-height: 1rem;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+#layout .ipu-tiled li div,
+#layout .ipu-tiled li i{
+    width: 50%;
+    background-color: #ddd;
+}
+#layout .ipu-flex div{
+    background-color: #eee;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+#layout .ipu-center{
+    min-height: 1rem;
+    background-color: #eee;
+}
+.page-back-home-index{
+    position: absolute;
+    z-index: 10001;
+    bottom:20%;
+    left:0;
+    background-color: #0a001f;
+    color: #eee;
+    border-radius: .05rem;
+    padding:.03rem .1rem;
+    font-size: .14rem;
+}
+.page-modal .ipu-btn-wrap .ipu-btn{
+    margin: .05rem;
+}

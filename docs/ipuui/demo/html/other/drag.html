@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>拖动</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../../../dist/css/ipu.css">
+    <link rel="stylesheet" type="text/css" href="../../dep/css/awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../../biz/css/demo.css">
+
+
+    <script src="../../dep/js/requirejs/require.js"></script>
+    <script src="../../biz/js/require-config-deep.js"></script>
+    <script src="../../biz/js/drag.js"></script>
+
+    <style>
+        .container li{
+            width: 30%;
+            margin: 1.6%;
+            float: left;
+            background-color: #eee;
+            line-height: .5rem;
+            height: .5rem;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        /* 定义拖动的样式 */
+        li[data-origstyle='cursor: move;']{
+           border: 1px solid #ccc;
+            background-color: #999;
+        }
+        /* 定义占位的样式 */
+        .drag-palceholder{
+            border: 1px dashed #ccc;
+        }
+    </style>
+</head>
+<body>
+<div class="ipu-row-flex ipu-row-flex-ver">
+    <div class="ipu-col ipu-col-auto">
+        <header class="ipu-toolbar">
+            <a class="ipu-icon fa fa-chevron-left ipu-fn-left" href="javascript:history.back(-1);"></a>
+            <a class="ipu-icon fa fa-home ipu-fn-right" href="../../index.html"></a>
+            <h1 class="ipu-toolbar-title">拖动</h1>
+        </header>
+    </div>
+    <div class="ipu-col">
+        <div class="ipu-flex-content" id="scrollDemo">
+            <div class="container">
+                <ul class="ipu-fn-clear">
+                    <li>
+                        1
+                    </li>
+                    <li>
+                        2
+                    </li>
+                    <li>
+                        3
+                    </li>
+                    <li>
+                        4
+                    </li>
+                    <li>
+                        5
+                    </li>
+                    <li>
+                        6
+                    </li>
+                    <li>
+                        7
+                    </li>
+                    <li>
+                        8
+                    </li>
+                    <li>
+                        9
+                    </li>
+                </ul>
+            </div>
+
+            <div class="ipu-fn-m">
+                官方版本是针对pc端的，修改了代码以支持手机（但不支持pc端）
+                <a href="http://dragsort.codeplex.com/">http://dragsort.codeplex.com/</a>
+            </div>
+
+            <div class="ipu-fn-m">
+                <table class="ipu-table">
+                <tbody>
+                <tr>
+                    <td style="width:1rem">dragSelector</td>
+                    <td>css选择器字符串，筛选可以拖动的元素</td>
+                </tr>
+                <tr>
+                    <td>dragSelectorExclude</td>
+                    <td>css选择器字符串，筛选不能被拖动的元素</td>
+                </tr>
+                <tr>
+                    <td>itemSelector</td>
+                    <td>css选择器，容器元素下子元素，可以被拖动的元素</td>
+                </tr>
+                <tr>
+                    <td>dragBetween</td>
+                    <td>拖动是否可以超出容器范围，默认false</td>
+                </tr>
+                <tr>
+                    <td>placeHolderTemplate</td>
+                    <td>拖动时的占位html片段</td>
+                </tr>
+                <tr>
+                    <td>scrollContainer</td>
+                    <td>拖动超出范围时，滚动的容器</td>
+                </tr>
+                <tr>
+                    <td>scrollSpeed</td>
+                    <td>容器滚动速度</td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
