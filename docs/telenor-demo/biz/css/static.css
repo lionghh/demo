@@ -1,0 +1,222 @@
+@charset "utf-8";
+@font-face {
+	font-family: "telenorlight";
+	src:  url("fonts/telenorlight-webfont.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "telenorregular";
+	src: url("fonts/telenor-webfont.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+/* 复写ipu.css */
+*{
+	box-sizing:border-box;
+	word-break: keep-all;
+}
+.ipu-toolbar > .ipu-fn-left,
+.ipu-toolbar > .ipu-fn-right{
+	min-width: .4rem;
+	text-align: center;
+}
+/* 公共样式 */
+body{
+	color: #333;
+	font-family: telenorlight, sans-serif;
+}
+.page-content{
+	padding: 0 .22rem .1rem;
+	overflow: auto;
+}
+.common-weight{
+	font-weight: bold;
+}
+.common-color{
+	color: #038CD6;
+}
+.common-width{
+    width: 100%;
+}
+.ipu-toolbar-title{
+	font-weight: bold;
+}
+.ipu-list{
+	font-family: telenorregular;
+}
+.ipu-list-title{
+	border-top: .02rem solid #038CD6;
+	line-height: .45rem;
+	font-weight: bold;
+	padding:0 .2rem;
+	font-size: .16rem;
+}
+
+/* 首页 */
+.index-info,
+.bill-info{
+	margin-top: .75rem;
+}
+.new-info{
+	font-size: .35rem;
+	line-height: .45rem;
+}
+.usage-info{
+	font-size: .18rem;
+	line-height: 1.1;
+	margin-top: .15rem;
+	color: #4a4a4a;
+	font-weight: bold;
+}
+.last-bill-list{
+	margin-top: .7rem;
+}
+.bill-list-title{
+	font-size: .2rem;
+	font-weight: bold;
+}
+.ipu-card{
+	margin:.15rem 0;
+	font-family: telenorregular;
+	border-top:.02rem solid #038CD6;
+}
+.last-bill-list .ipu-card-header{
+	background-color: #fafafa;
+}
+.icon-bill{
+	background-color: #038CD6;
+	width: .48rem;
+	height: .48rem;
+	line-height: .48rem;
+	border-radius: 50%;
+	text-align: center;
+	color: #fff;
+	font-size: .26rem;
+	position: relative;
+	margin-right: .15rem;
+}
+.icon-warn{
+	position: absolute;
+	top:0;
+	right: -.06rem;
+	display: block;
+	width: .2rem;
+	height: .2rem;
+	line-height: .2rem;
+	border-radius: 50%;
+	text-align: center;
+	font-size: .12rem;
+	color: #61573D;
+	background-color: #FFB900;
+}
+.page-index{
+	background-image: linear-gradient(#9CDCFF, #fff);
+}
+.bill-month{
+	padding-top: .2rem;
+	overflow: hidden;
+}
+.bill-part-info{
+	color:#c1c1c1;
+	font-size:.16rem;
+}
+.icon-bill.icon-bill-paid{
+	background-color: #43C682;
+}
+.tips-info{
+	color: #038CD6;
+	font-size: .17rem;
+	margin-top: .1rem;
+}
+.page-bill-detail .bill-head-info{
+	margin: 0 -.22rem;
+	background-color: #fff;
+	padding:.5rem .22rem .4rem;
+}
+.bill-month-title{
+	font-size: .22rem;
+	font-family: telenorregular;
+}
+.bill-detail-info{
+	margin: .5rem -.22rem 0;
+}
+.page-btns{
+	padding:.4rem .25rem .01rem;
+}
+.page-btns .ipu-btn{
+	margin-bottom: .22rem;
+}
+.ipu-btn.button-default{
+	color: #038CD6;
+	background-color: #fff;
+	border: 1px solid #cbcbcb;
+}
+.ipu-btn.ipu-btn-l {
+	font-size: .18rem;
+	line-height: .6rem;
+	padding: 0;
+	font-family: telenorregular;
+}
+.button-default:not(.ipu-disabled):not(:disabled):active, .button-default.ipu-current{
+	background-color: #efefef;
+	color: #026ba4;
+}
+.ipu-list-item-inner{
+	padding: .18rem;
+}
+.page-subscriptions .new-info{
+	margin-top: .5rem;
+}
+.ipu-ipu-progress{
+	height: .05rem;
+	border-radius: .035rem;
+}
+.sub-list{
+	padding-top: .1rem;
+}
+.sub-name{
+	margin-top: .42rem;
+}
+.sub-tips-info{
+	font-size: .17rem;
+	line-height: 1.25;
+	font-weight: bold;
+	margin: .15rem 0 ;
+}
+.sub-head-info{
+	margin: 0 -.22rem .3rem;
+	padding: .6rem .22rem .1rem;
+	background-color: #fff;
+	border-bottom: 1px solid #e7e7e7;
+}
+.sub-info-item .ipu-list{
+	margin-top: .3rem;
+}
+.sub-info-item .ipu-list-item{
+	padding: 0;
+}
+.sub-info-item .ipu-list-item-inner{
+	padding: .08rem 0;
+}
+.list-footer-info{
+	font-size: .18rem;
+	padding: .08rem 0 .12rem;
+}
+.sub-body-info{
+	margin: 0 -.22rem;
+}
+.sub-body-info .ipu-ipu-progress{
+	margin: .05rem 0;
+}
+.sub-click-btn{
+	margin: .12rem 0;
+}
+.ipu-list + .ipu-list{
+	margin-top: .15rem;
+}
+.page-sub-detail .sub-head-info{
+	margin-bottom: 0;
+	padding-top: .3rem;
+	padding-bottom: .2rem;
+}

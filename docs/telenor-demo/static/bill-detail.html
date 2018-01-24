@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Bill Detail</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1, maximum-scale=1"><!-- 宽度自动适配 -->
+    <meta content="telephone=no" name="format-detection" /><!-- 不识别页面上的数字为可拨打号码 -->
+
+    <link rel="stylesheet" type="text/css" href="../dep/ipu/css/ipu.css">
+    <link rel="stylesheet" type="text/css" href="../dep/css/awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../biz/css/static.css">
+
+    <script src="../dep/js/requirejs/require.js"></script>
+    <script src="../biz/js/require-config.js"></script>
+    <script src="../biz/js/bill-detail.js"></script>
+</head>
+<body class="page-bill-detail">
+    <div class="ipu-row-flex ipu-row-flex-ver">
+        <div class="ipu-col ipu-col-auto">
+            <header class="ipu-toolbar">
+                <h1 class="ipu-toolbar-title">
+                    Bill Detail
+                </h1>
+                <a href="javascript:history.go(-1);" class="ipu-fn-left">
+                    <i class="ipu-icon fa fa-angle-left"></i>
+                </a>
+            </header>
+        </div>
+
+        <div class="ipu-col">
+            <div class="ipu-flex-content" id="bill-detail-content">
+                <div class="page-content ">
+                    <div class="bill-head-info">
+                        <div class="new-info">
+                            <div class="common-weight bill-month-title">
+                                Bill for 十二月
+                            </div>
+                            It looks like we haven't received your payment.
+                            <div class="common-weight">348.00 kr.</div>
+                        </div>
+                        <div class="tips-info">
+                            <i class="fa fa-file-text-o icon-bill">
+                                <i class="fa fa-exclamation icon-warn"></i>
+                            </i>
+                            <a href="javascript:;" class="common-weight todo">
+                                Payment missing
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bill-detail-info">
+                        <div class="ipu-list">
+                            <div class="ipu-list-title">
+                                This bill covers
+                            </div>
+                            <ul>
+                                <li class="ipu-list-item">
+                                    <div class="ipu-list-item-inner ipu-row-flex">
+                                        <div class="ipu-col ipu-col-auto">
+                                            <i class="fa fa-volume-control-phone icon-bill"></i>
+                                        </div>
+                                        <div class="ipu-col">
+                                            <div class="common-weight bill-item-title">
+                                                BroadBand
+                                            </div>
+                                            <div class="ipu-fn-txt-row bill-item-content">
+                                                Breadband op til 20M/2M = Family Breadband op til 20M/2M = Family
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="ipu-list-item">
+                                    <div class="ipu-list-item-inner ipu-row-flex">
+                                        <div class="ipu-col ipu-col-auto">
+                                            <i class="fa fa-feed icon-bill"></i>
+                                        </div>
+                                        <div class="ipu-col">
+                                            <div class="common-weight bill-item-title">
+                                                BroadBand
+                                            </div>
+                                            <div class="ipu-fn-txt-row bill-item-content ">
+                                                Breadband op til 20M/2M = Family Breadband op til 20M/2M = Family
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="page-btns">
+                            <button class="ipu-btn ipu-btn-block  ipu-btn-l todo">
+                                Open invoce(PDF)
+                            </button>
+                            <button class="ipu-btn ipu-btn-block  ipu-btn-l button-default todo">
+                                Change payment method
+                            </button>
+                            <button class="ipu-btn ipu-btn-block  ipu-btn-l button-default todo">
+                                Pay bill
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
