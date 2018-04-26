@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+  <title>Authentication</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0, user-scalable=no"/>
+  <!-- 宽度自动适配 -->
+  <meta content="telephone=no" name="format-detection"/> <!-- 不识别页面上的数字为可拨打号码 -->
+
+  <link rel="stylesheet" type="text/css" href="ipu/css/ipu.min.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/project.css">
+
+  <script src="js/lib/requirejs/require.min.js"></script>
+  <script src="js/require-config.js"></script>
+  <script src="js/biz/find-pass.js"></script>
+</head>
+<body class="pages-findPass">
+  <div class="ipu-flex-row ipu-row-flex-ver">
+    <div class="ipu-flex-col page-head">
+      <header class="ipu-toolbar">
+        <a class="ipu-fn-left ipu-icon icon-back" href="javascript:history.back(-1);"></a>
+        <h1 class="ipu-toolbar-title">Authentication</h1>
+      </header>
+    </div>
+    <div class="ipu-flex-col ipu-flex-col-auto" data-iscroll>
+
+      <div class="page-content">
+        <form class="page-form page-form-byphone" autocomplete="off">
+          <div class="form-msg"></div>
+
+          <div class="ipu-flex-row ipu-flex-align-end form-row-input">
+            <div class="ipu-flex-col-auto form-input-wrap">
+              <input type="text" class="form-input" placeholder="Phone number"/>
+            </div>
+            <div class="ipu-flex-col form-input-asset">
+              <div class="input-clear"></div>
+            </div>
+          </div>
+          <div class="ipu-flex-row ipu-flex-align-end form-row-input">
+            <div class="ipu-flex-col-auto form-input-wrap">
+              <input type="text" class="form-input" disabled placeholder="Verification code"/>
+            </div>
+            <div class="ipu-flex-col form-input-asset">
+              <div class="input-clear"></div>
+            </div>
+            <div class="ipu-flex-col">
+              <button type="button" class="ipu-btn ipu-btn-s btn-obtain">Obtain</button>
+            </div>
+          </div>
+
+          <div class="login-btns">
+            <button class="ipu-btn ipu-btn-l ipu-btn-block form-btn-submit" >Submit</button>
+          </div>
+
+          <div class="form-row-link">
+            <a href="javascript:;">Email verification</a>
+          </div>
+        </form>
+
+        <form class="page-form page-form-byemail" autocomplete="off">
+          <div class="form-msg">
+            incorrect verification code.
+          </div>
+
+          <div class="ipu-flex-row ipu-flex-align-end form-row-input">
+            <div class="ipu-flex-col-auto form-input-wrap">
+              <input type="text" class="form-input" placeholder="Email"/>
+            </div>
+            <div class="ipu-flex-col form-input-asset">
+              <div class="input-clear"></div>
+            </div>
+          </div>
+
+          <div class="login-btns">
+            <button class="ipu-btn ipu-btn-l ipu-btn-block form-btn-submit" >Submit</button>
+          </div>
+
+          <div class="form-row-link">
+            <a href="javascript:;">Phone number verification</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="ipu-modal result-dialog">
+    <div class="dialog-btn-close"></div>
+    <div class="dialog-head">
+      <div class="dialog-logo"></div>
+    </div>
+    <div class="dialog-body">
+      <div class="dialog-msg">
+        Reset password link was sent to your registered email. Please go to your Email to reset your password .
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
