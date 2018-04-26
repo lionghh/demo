@@ -417,7 +417,7 @@ body.pages-reset {
   background-image: url('../img/index/icon-webrtc-active.png');
 }
 
-.pages-index-home{
+.home-head{
   background: url("../img/index/home-bg.png") center -.2rem no-repeat;
   background-size: 100% auto;
 }
@@ -460,7 +460,11 @@ body.pages-reset {
   background-image: url("../img/index/icon-title.png");
 }
 .home-devices{
-  padding:0 .125rem;
+  margin:0 .25rem;
+  width: auto;
+}
+.home-devices .ipu-hammer-carousel .ipu-carousel-wrapper{
+  margin: 0 -.125rem;
 }
 .device-row{
   overflow: auto;
@@ -580,8 +584,8 @@ body.pages-reset {
 }
 .mydata-col-img{
   margin: .14rem 0 .16rem .1rem;
-  width: .4rem;
-  height: .4rem;
+  width: .405rem;
+  height: .405rem;
   background: url("../img/index/icon-topup.png") center center no-repeat;
   background-size: 100%;
 }

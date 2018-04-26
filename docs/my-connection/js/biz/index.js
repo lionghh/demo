@@ -12,10 +12,6 @@ require(['jquery', 'ipu', 'echarts', 'iScroll'], function ($, ipu, echarts, iScr
     // home-scroll
     var homeScroll = new iScroll($(".home-scroll")[0]);
 
-    $(".home-totop").click(function () {
-      homeScroll.scrollTo(0, 0);
-    });
-
     if($(".home-devices>ul>li").size() > 1) { // 设备数大于4个，才处理滚动
       $(".arror-flag").show();
       var hammerCarousel = ipu.hammerCarousel(".ipu-hammer-carousel");
